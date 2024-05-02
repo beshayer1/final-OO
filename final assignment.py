@@ -330,7 +330,7 @@ def add_event_gui():
     furniture_supply_company_entry.grid(row=13, column=1)
     invoice_entry.grid(row=14, column=1)
 
-    # Add entry fields for other event details
+   
 
     def save_event():
         try:
@@ -487,7 +487,7 @@ def add_client_gui():
         def modify_client():
             try:
                 client_id = int(client_id_entry.get())
-                new_client_data = {}  # Populate this dictionary with modified client data
+                new_client_data = {} 
                 if modify_client(client_id, new_client_data):
                     messagebox.showinfo("Success", "Client modified successfully.")
                 else:
